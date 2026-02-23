@@ -18,14 +18,14 @@ function App() {
 
   // Fetch tasks
   useEffect(() => {
-    fetch("http://localhost:3000/tasks")
+    fetch("https://task-tracker-fullstack-16jw.onrender.com/tasks")
       .then((res) => res.json())
       .then((data) => setTasks(data));
   }, []);
 
   // Add task
   const addTask = (title) => {
-    fetch("http://localhost:3000/tasks", {
+    fetch("https://task-tracker-fullstack-16jw.onrender.com/tasks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title }),
@@ -38,7 +38,7 @@ function App() {
 
   // Delete task
   const deleteTask = (id) => {
-    fetch(`http://localhost:3000/tasks/${id}`, {
+    fetch(`https://task-tracker-fullstack-16jw.onrender.com/tasks/${id}`, {
       method: "DELETE",
     }).then(() => {
       setTasks((prev) => prev.filter((task) => task._id !== id));
@@ -47,7 +47,7 @@ function App() {
 
   // Toggle complete
   const toggleComplete = (id, currentStatus) => {
-    fetch(`http://localhost:3000/tasks/${id}`, {
+    fetch(`https://task-tracker-fullstack-16jw.onrender.com/tasks/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ completed: !currentStatus }),
@@ -64,7 +64,7 @@ function App() {
 
   // Edit task
   const editTask = (id, newTitle) => {
-    fetch(`http://localhost:3000/tasks/${id}`, {
+    fetch(`https://task-tracker-fullstack-16jw.onrender.com/tasks/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: newTitle }),
