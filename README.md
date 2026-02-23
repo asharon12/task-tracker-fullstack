@@ -80,7 +80,7 @@ npm install
 
 Create a .env file inside task-backend:
 
-MONGO_URI=mongodb+srv://sharonarputharaj_db_user:3VKTyLAPSn6q6erg@cluster01.7fupmtl.mongodb.net/?appName=Cluster01
+MONGO_URI=db_url
 
 Start backend:
 node index.js
