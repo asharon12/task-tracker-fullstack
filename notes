@@ -1,5 +1,5 @@
 🚀 PROJECT SUMMARY – Task Tracker (Full Stack MERN App)
-📌 What You Built
+📌 What I Built
 
 A fully deployed full-stack Task Tracker application using:
 
@@ -25,19 +25,13 @@ This is a real production-style architecture.
 
 ⚙️ Core Features
 
-Create Task
-
-Edit Task
-
-Toggle Complete / Undo
-
-Delete Task
-
-Persistent storage (MongoDB)
-
-RESTful API design
-
-Deployed to cloud
+1. Create Task
+2. Edit Task
+3. Toggle Complete / Undo
+4. Delete Task
+5. Persistent storage (MongoDB)
+6. RESTful API design
+7. Deployed to cloud
 
 🧠 FRONTEND – Important Concepts
 1️⃣ State Management
